@@ -1,6 +1,6 @@
-var seconds = 10;
+//Moving Nyan Function
 
-function myMove() {
+function Nyan() {
     var elem = document.getElementById("myAnimation");
     var pos = 0;
     var id = setInterval(frame, 10);
@@ -15,4 +15,32 @@ function myMove() {
         }
     }
 
+}
+
+//Toggle background on/off 
+
+var elembg = document.getElementById("background");
+var elembtn = document.getElementById("button");
+
+function noBackground() {
+    elembg.style.display = "none";
+    elembtn.style.display = "block";
+}
+
+
+function showBackground() {
+    elembg.style.display = "block";
+    elembtn.style.display = "none";
+    setTimeout(noBackground, 10000);
+}
+
+var x = document.getElementById("soundtrack");
+
+function playAudio (){
+    x.play();
+    setTimeout(pauseAudio, 10000);
+}
+
+function pauseAudio (){
+    x.pause();
 }
