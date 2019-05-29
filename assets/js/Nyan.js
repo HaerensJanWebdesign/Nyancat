@@ -31,14 +31,14 @@ function noBackground() {
 function showBackground() {
     elembg.style.display = "block";
     elembtn.style.display = "none";
-    setTimeout(noBackground, 10000);
+    setTimeout(noBackground, 11000);
 }
 
 var x = document.getElementById("soundtrack");
 
-function playAudio (){
+function playNyan (){
     x.play();
-    setTimeout(pauseAudio, 10000);
+    setTimeout(pauseAudio, 11000);
 }
 
 function pauseAudio (){
