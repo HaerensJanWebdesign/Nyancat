@@ -23,16 +23,18 @@ var elembg = document.getElementById("background");
 var elembtn = document.getElementById("button");
 
 function noBackground() {
-    elembg.style.display = "none";
-    elembtn.style.display = "block";
+    elembg.style.visibility = "hidden";
+    elembtn.style.visibility = "visible";
 }
 
 
 function showBackground() {
-    elembg.style.display = "block";
-    elembtn.style.display = "none";
+    elembg.style.visibility = "visible";
+    elembtn.style.visibility = "hidden";
     setTimeout(noBackground, 11000);
 }
+
+//Start and Stop Nyansong
 
 var x = document.getElementById("soundtrack");
 
